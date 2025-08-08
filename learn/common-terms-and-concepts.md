@@ -95,13 +95,13 @@ There are many types of DNS records, let's go over some common ones. This list i
 - **MX**: MX records are used to define how mail is handled for your domain. The content of an MX record is the priority and answering server domain name. Lower preference number indicates higher priority.
 - **TXT**: Text records associate text data with your domain. They are used for a variety of reasons, notable for SPF or DKIM.
 
-| Domain | Time To Live | Class | Type | Content { class="compact" } |
-|--------|--------------|----|------|---------|
-| example.com. | 86400  | IN | A    | 192.168.1.240 |
-| ipv6.example.com. | 86400 | IN | AAAA | feef:00bb:2005:1eef:fbca:544d |
-| www<span></span>.example.com. | 86400 | IN | CNAME | example.com. |
-| example.com. | 86400 | IN | MX | 10 mail.mailserver.com |
-| example.com. | 86400 | IN | TXT | "Reserved for a purpose I am not legally required to disclose." |
+| Domain                        | Time To Live | Class | Type  | Content { class="compact" }                                     |
+| ----------------------------- | ------------ | ----- | ----- | --------------------------------------------------------------- |
+| example.com.                  | 86400        | IN    | A     | 192.168.1.240                                                   |
+| ipv6.example.com.             | 86400        | IN    | AAAA  | feef:00bb:2005:1eef:fbca:544d                                   |
+| www<span></span>.example.com. | 86400        | IN    | CNAME | example.com.                                                    |
+| example.com.                  | 86400        | IN    | MX    | 10 mail.mailserver.com                                          |
+| example.com.                  | 86400        | IN    | TXT   | "Reserved for a purpose I am not legally required to disclose." |
 
 
 ## Reverse Proxies
@@ -125,7 +125,7 @@ Port forwarding inspects and alters packet headers before it is routed to its ne
 
 Port forwarding is a function of your firewall. Commonly at the router or other network gateway.
 
-Linux has two firewalls called `iptables` and `nftables`, with many frontends or management packages available for them. BSD-based firewalls are `pf`, `ipfw`, and `IPFilter`. The Windows firewall consists of a scarecrow holding a sign saying: "plz no tresspass".
+Linux has two firewalls called `iptables` and `nftables`, with many frontends or management packages available for them. BSD-based firewalls are `pf`, `ipfw`, and `IPFilter`. The Windows firewall consists of a scarecrow holding a sign saying: "plz no trespass".
 
 ## Containers
 
