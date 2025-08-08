@@ -160,7 +160,7 @@ Certificates from Let's Encrypt are only valid for 90 days. Because of this `acm
     ```bash
     acme.sh --issue --dns dns_... --domain YOURSUBDOMAIN.YOURSITEDOMAIN.com --domain *.YOURSUBDOMAIN.YOURSITEDOMAIN.com
     ```
-    In theory it works with Duck DNS, but if you add the wildcard as an alternative name there sadly is a bug or incompatibility (depending on who you want to blame) and acme.sh runs into an infintie loop. It works if you only use the wildcard domain as the primary domain name. But with only a wildcard in the certificate I don't know if this certificate will play nice with all devices, browsers and applications.  
+    In theory it works with Duck DNS, but if you add the wildcard as an alternative name there sadly is a bug or incompatibility (depending on who you want to blame) and acme.sh runs into an infinite loop. It works if you only use the wildcard domain as the primary domain name. But with only a wildcard in the certificate I don't know if this certificate will play nice with all devices, browsers and applications.  
       
     If you want to use acme.sh and create a wildcard certificate desec.io works as a DNS provider.
 
