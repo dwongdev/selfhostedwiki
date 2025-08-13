@@ -4,7 +4,7 @@ label: Home
 icon: home
 ---
 
-We welcome you to explore the pages here and familiarize yourself with the layout of the wiki. If you have any suggestions on how the wiki can be better or alternative oganization methods, feedback or questions in general about the wiki please create an issue [here](https://github.com/r-selfhosted/wiki/issues) or open a [pull request](https://github.com/r-selfhosted/wiki)!
+We welcome you to explore the pages here and familiarize yourself with the layout of the wiki. If you have any suggestions on how the wiki can be better or alternative organization methods, feedback or questions in general about the wiki please create an issue [here](https://github.com/r-selfhosted/wiki/issues) or open a [pull request](https://github.com/r-selfhosted/wiki)!
 
 ## Official Pages
 

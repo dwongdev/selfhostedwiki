@@ -27,7 +27,7 @@ If you want to use another DNS provider you can skip right to step [Install `acm
 3. Enter either:
     - The local IP address of your server if your server is not accessible from the internet or the public IP address of your server if your server is accessible from the internet in the _current ip_ field and press _update ip_.  
       
-      The choosen sub domain name will be the one that the server/service needs to be addressed when using the certificate, for it to be valid. Since you set the sub domain to the IP address of your server it should be reachable when the sub domain name get's translated by any DNS. Depending on your home router you might need add an exception of the sub domain name to the DNS rebind protection.
+      The chosen sub domain name will be the one that the server/service needs to be addressed when using the certificate, for it to be valid. Since you set the sub domain to the IP address of your server it should be reachable when the sub domain name get's translated by any DNS. Depending on your home router you might need add an exception of the sub domain name to the DNS rebind protection.
 4. Keep the website open, because you need it in a later step.
 
 ### deSEC
@@ -160,7 +160,7 @@ Certificates from Let's Encrypt are only valid for 90 days. Because of this `acm
     ```bash
     acme.sh --issue --dns dns_... --domain YOURSUBDOMAIN.YOURSITEDOMAIN.com --domain *.YOURSUBDOMAIN.YOURSITEDOMAIN.com
     ```
-    In theory it works with Duck DNS, but if you add the wildcard as an alternative name there sadly is a bug or incompatibility (depending on who you want to blame) and acme.sh runs into an infitie loop. It works if you only use the wildcard domain as the primary domain name. But with only a wildcard in the certificate I don't know if this certificate will play nice with all devices, browsers and applications.  
+    In theory it works with Duck DNS, but if you add the wildcard as an alternative name there sadly is a bug or incompatibility (depending on who you want to blame) and acme.sh runs into an infinite loop. It works if you only use the wildcard domain as the primary domain name. But with only a wildcard in the certificate I don't know if this certificate will play nice with all devices, browsers and applications.  
       
     If you want to use acme.sh and create a wildcard certificate desec.io works as a DNS provider.
 

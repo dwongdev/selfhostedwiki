@@ -6,7 +6,7 @@ order: alpha
 ---
 
 !!!
-When working with self-hosting software and services you'll find there's a varierty of difficulties. This document helps define some difficulty tiers. You'll also notice references to these difficulties throughout the guides contained in this wiki.
+When working with self-hosting software and services you'll find there's a variety of difficulties. This document helps define some difficulty tiers. You'll also notice references to these difficulties throughout the guides contained in this wiki.
 !!!
 
 ## Easy / Basic
